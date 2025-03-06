@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap");
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+header,
+figure,
+article,
+footer,
+nav {
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+header {
+  background-color: blue;
+  color: aliceblue;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 700;
+}
+
+nav {
+  background-color: aqua;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(109, 65, 8);
+  text-decoration: none;
+  margin: 0 40px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px dotted black; */
+}
+
+#hero .resume_hook {
+  flex: 1;
+}
+
+.hero-image {
+}
+
+#hero h2 {
+  font-size: 100px;
+  /* padding-bottom: px; */
+  margin: 0;
+}
+
+button {
+  width: 380px;
+  margin: 20px auto;
+  padding: 25px;
+  font-size: 20px;
+  background-color: blue;
+  color: azure;
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#work {
+  /* border: 1px solid black; */
+}
+#work h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#work figure {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  /* background-image: url(Lastma\ Tracking\ device.jpg); */
+}
+
+figcaption {
+  text-align: center;
+}
+
+.project-one {
+  background-image: url(Lastma\ Tracking\ device.jpg);
+}
+
+.project-two {
+  background-image: url(Lastma\ Tracking\ device.jpg);
+}
+
+.project-three {
+  background-image: url(Lastma\ Tracking\ device.jpg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#work .projects {
+  /* border: 1px solid black; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#about h2 {
+  text-align: center;
+  font-size: 50px;
+  /* border: 1px solid black; */
+}
+
+#about .video {
+  width: 1300px;
+  height: 768px;
+  /* border: 1px solid black; */
+  object-fit: fill;
+  overflow: none;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+section h3 {
+  /* padding: 20px;
+  margin: auto 0; */
+  text-align: center;
+  /* border: solid 1px black; */
+}
+
+#resume p {
+  /* padding: 20px;
+  margin: auto 0; */
+  text-align: center;
+  /* border: solid 1px black; */
+}
+
+#resume button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
