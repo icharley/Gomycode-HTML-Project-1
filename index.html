@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Charles Web dev Portfolio!</header>
+    <header id="header">Charles Web dev Portfolio!</header>
 
     <nav>
       <a href="#header">Home</a>
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#resume">Resume</a>
-      <a href="#">Contact</a>
+      <a href="#contact">Contact</a>
     </nav>
 
     <main>
@@ -40,27 +40,28 @@
 
       <section id="work">
         <h2>From ideation to Reality – My Work Speaks</h2>
+        <a href="#work"><button class="mobile">View my innovations</button></a>
 
         <div class="thumbnails">
           <article>
-            <figure class="project-one">
-              <!-- <img src="Lastma Tracking device.jpg" alt="" /> -->
-            </figure>
-            <figcaption>LASTMA DigiTrack Platform Dev</figcaption>
+            <a href="">
+              <img src="Lastma Tracking device.jpg" alt="" />
+              <figcaption>LASTMA DigiTrack Platform Dev</figcaption>
+            </a>
           </article>
 
           <article>
-            <figure class="project-two">
-              <!-- <img src="Lastma Tracking device.jpg" alt="" /> -->
-            </figure>
-            <figcaption>LASTMA DigiTrack Platform Dev</figcaption>
+            <a href="">
+              <img src="Lastma Tracking device.jpg" alt="" />
+              <figcaption>LASTMA DigiTrack Platform Dev</figcaption>
+            </a>
           </article>
 
           <article>
-            <figure class="project-three">
-              <!-- <img src="Lastma Tracking device.jpg" alt="" /> -->
-            </figure>
-            <figcaption>LASTMA DigiTrack Platform Dev</figcaption>
+            <a href="">
+              <img src="Lastma Tracking device.jpg" alt="" />
+              <figcaption>LASTMA DigiTrack Platform Dev</figcaption>
+            </a>
           </article>
         </div>
 
@@ -69,6 +70,7 @@
 
       <section id="about">
         <h2>Creativity in motion</h2>
+
         <figure class="video">
           <video
             controls
@@ -78,32 +80,44 @@
             src="Creativity in motion.mp4"
           ></video>
         </figure>
+        <p>
+          As a developer, I write clean, efficient code to bring projects to
+          life. Beyond that, I optimize products, streamline operations, and
+          drive innovation. Whether you're looking for a coder, a problem
+          solver, or someone who sees the bigger picture—I’ve got you covered.
+        </p>
       </section>
       <section id="resume">
         <h3>Want to get to know me more?</h3>
         <p>
           There are quite a few interesting information and facts about me that
-          didn't get to make it to my page. Feel free to have a peep!
+          didn't get to make it to my page. Feel free to have a peep 👀 into my
+          resume!
         </p>
-        <a href="#resume"><button class="resume">Download My Resume</button></a>
+        <a href="#resume"><button class="resume">Download Resume</button></a>
       </section>
-      <section class="contact"></section>
-      <aside>
-        <h2>Contact me</h2>
-        <form action="">
-          <label for="">Name</label>
-          <input placeholder="Fullname" type="text" />
-          <label for="Email">Email</label>
-          <input placeholder="Email" type="text" />
-          <label for="">Drop a message</label>
-          <textarea name="paragraph_text" cols="50" rows="10"></textarea>
-          <button>Send Message</button>
-        </form>
-      </aside>
+
+      <section id="contact">
+        <h2>Contact me! Lets get to work. 👇</h2>
+        <aside>
+          <img src="innovate.webp" alt="" />
+          <form action="">
+            <label for="">Name</label>
+            <input placeholder="Fullname" type="text" />
+            <label for="Email">Email</label>
+            <input placeholder="Email" type="text" />
+            <label for="">Drop a message</label>
+            <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+          </form>
+        </aside>
+        <button>Send Message</button>
+      </section>
     </main>
 
     <footer>
-      Lets get to work. Reach out by email: eng.charlesegwuh@gmail.com
+      <nav>
+        <a href="#header">Back Home</a>
+      </nav>
     </footer>
   </body>
 </html>

@@ -6,14 +6,17 @@ body {
   box-sizing: border-box;
 }
 
-header,
 figure,
-article,
 footer,
 nav {
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
+  padding: 20px 0;
+}
+header {
+  padding: 20px 0;
+}
+
+section {
+  padding: 0;
 }
 
 header {
@@ -48,9 +51,6 @@ nav a {
   flex: 1;
 }
 
-.hero-image {
-}
-
 #hero h2 {
   font-size: 100px;
   /* padding-bottom: px; */
@@ -78,39 +78,30 @@ button:hover {
 #work h2 {
   text-align: center;
   font-size: 50px;
+  margin: 0;
 }
 
 .thumbnails {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* border: 1px solid black; */
 }
 
-#work figure {
-  border: 1px solid black;
-  width: 400px;
-  height: 400px;
-  /* background-image: url(Lastma\ Tracking\ device.jpg); */
+article img {
+  max-width: 500px;
 }
 
 figcaption {
   text-align: center;
 }
 
-.project-one {
-  background-image: url(Lastma\ Tracking\ device.jpg);
-}
-
-.project-two {
-  background-image: url(Lastma\ Tracking\ device.jpg);
-}
-
-.project-three {
-  background-image: url(Lastma\ Tracking\ device.jpg);
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+#work .mobile {
+  display: none;
 }
 
 #work .projects {
@@ -120,9 +111,17 @@ html {
   justify-content: center;
 }
 
+#about {
+  /* border: 1px solid black; */
+  /* padding-top: 50px; */
+  padding-bottom: 50px;
+  /* background: url(abstract.webp); */
+}
+
 #about h2 {
   text-align: center;
   font-size: 50px;
+  margin: 0;
   /* border: 1px solid black; */
 }
 
@@ -147,6 +146,12 @@ section h3 {
   /* border: solid 1px black; */
 }
 
+#resume {
+  padding: 30px;
+  background-color: rgb(243, 194, 194);
+  border-radius: 10px;
+}
+
 #resume p {
   /* padding: 20px;
   margin: auto 0; */
@@ -158,4 +163,195 @@ section h3 {
   display: flex;
   justify-content: center;
   text-decoration: none;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 20px;
+  border-style: none;
+  background-color: rgb(175, 231, 231);
+  border-radius: 10px;
+}
+
+/* input {
+  max-width: 450px;
+} */
+
+aside {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 800px; */
+  gap: 15px;
+}
+
+aside img {
+  border-radius: 10px;
+  height: 80%;
+}
+aside form {
+  flex: 1;
+  max-width: 800px;
+  /* border: 1px solid black; */
+}
+
+#contact button {
+  display: flex;
+  background-color: rgb(35, 184, 184);
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px dotted black; */
+  }
+
+  #hero .resume_hook {
+    flex: 1;
+  }
+
+  #hero h2 {
+    font-size: 2.5rem;
+    display: none;
+  }
+
+  #hero p {
+    display: none;
+  }
+
+  button {
+    display: none;
+  }
+
+  .hero-image {
+    padding: 0;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #work h2 {
+    font-size: 1.2rem;
+  }
+
+  .thumbnails {
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 0;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    /* border: 1px solid black; */
+    align-content: ;
+  }
+
+  article {
+    flex: 1;
+    /* border: 1px solid black; */
+    max-width: 100%;
+  }
+  article img {
+    width: 450px;
+    padding: 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+  }
+
+  #work .mobile {
+    display: flex;
+    max-width: 350px;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  a button {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  #about h2 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+
+  #about .video {
+    max-width: 450px;
+    height: 300px;
+    /* border: 1px solid black; */
+  }
+
+  #about p {
+    text-align: justify;
+  }
+
+  #about {
+    padding-bottom: 20px;
+  }
+
+  #resume {
+    /* border: 1px solid black; */
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  aside {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  aside img {
+    width: 100%;
+  }
+
+  #contact button {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
 }
